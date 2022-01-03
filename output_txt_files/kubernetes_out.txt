@@ -1,7 +1,15 @@
-voclabs:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ ./run_kubernetes.sh 
+voclabs:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (project4) $ ./run_kubernetes.sh 
 Error from server (AlreadyExists): pods "microserviceapp" already exists
-NAME              READY   STATUS    RESTARTS   AGE
-microserviceapp   1/1     Running   0          59s
+NAME              READY   STATUS    RESTARTS       AGE
+microserviceapp   1/1     Running   1 (151m ago)   156m
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 Handling connection for 8000
+
+voclabs:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (project4) $ ./make_prediction.sh 
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
